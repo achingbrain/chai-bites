@@ -12,7 +12,7 @@ declare global {
        *   expect(new Uint8Array([1, 2])).to.equalBytes([1, 2]);
        *   expect(new Uint8Array[65, 66, 67])).to.equalBytes('414243');
        */
-      equalBytes(bytes: string | ArrayLike<number>): Assertion;
+      equalBytes(bytes?: string | ArrayLike<number>): Assertion;
     }
 
     interface Assert {
@@ -27,7 +27,7 @@ declare global {
        *   Assert.equalBytes(new Uint8Array(3), [0, 0, 0]);
        *   Assert.equalBytes(new Uint8Array(2), '0000');
        */
-      equalBytes(buffer: Uint8Array, bytes: string | ArrayLike<number>, msg?: string): void;
+      equalBytes(buffer?: Uint8Array, bytes?: string | ArrayLike<number>, msg?: string): void;
     }
   }
 }

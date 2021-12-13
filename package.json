@@ -1,13 +1,13 @@
 {
-  "name": "chai-bytes",
+  "name": "chai-bites",
   "version": "0.1.2",
   "description": "Chai assertions for byte arrays equality",
   "repository": {
     "type": "git",
-    "url": "https://github.com/slowli/chai-bytes.git"
+    "url": "https://github.com/achingbrain/chai-bites.git"
   },
   "bugs": {
-    "url": "https://github.com/slowli/chai-bytes/issues"
+    "url": "https://github.com/achingbrain/chai-bites/issues"
   },
   "engines": {
     "node": ">=10"
