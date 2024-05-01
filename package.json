@@ -1,6 +1,6 @@
 {
   "name": "chai-bites",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Chai assertions for byte arrays equality",
   "repository": {
     "type": "git",
