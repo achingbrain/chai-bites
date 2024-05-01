@@ -1,3 +1,5 @@
+Fork of [chai-bytes](https://www.npmjs.com/package/chai-bytes) published as ESM with relaxed input types.
+
 # Chai Assertions for Byte Arrays Equality
 
 [![Build status][workflow-image]][workflow-url]

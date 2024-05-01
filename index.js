@@ -1,5 +1,3 @@
-'use strict';
-
 function every (buffer, predicate) {
   if (Uint8Array && Uint8Array.prototype.every) {
     return buffer.every(predicate);
@@ -20,7 +18,7 @@ function every (buffer, predicate) {
  *   expect(new Uint8Array([1, 2])).to.equalBytes([1, 2]);
  *   expect(new Uint8Array[65, 66, 67])).to.equalBytes('414243');
  */
-module.exports = function (chai) {
+export default function (chai) {
   const Assertion = chai.Assertion;
 
   Assertion.addMethod('equalBytes', function (expected) {

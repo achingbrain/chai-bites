@@ -1,7 +1,11 @@
 'use strict';
 /* eslint-env node, mocha */
 
-const chai = require('chai').use(require('..'));
+import * as chai from 'chai'
+import bites from '../index.js'
+
+chai.use(bites)
+
 const expect = chai.expect;
 const assert = chai.assert;
 
