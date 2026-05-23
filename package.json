@@ -4,7 +4,7 @@
   "description": "Chai assertions for byte arrays equality",
   "repository": {
     "type": "git",
-    "url": "https://github.com/achingbrain/chai-bites.git"
+    "url": "git+https://github.com/achingbrain/chai-bites.git"
   },
   "bugs": {
     "url": "https://github.com/achingbrain/chai-bites/issues"
