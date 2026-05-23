@@ -27,10 +27,10 @@ declare global {
        *   Assert.equalBytes(new Uint8Array(3), [0, 0, 0]);
        *   Assert.equalBytes(new Uint8Array(2), '0000');
        */
-      equalBytes(buffer?: Uint8Array, bytes?: string | ArrayLike<number>, msg?: string): void;
+      equalBytes(buffer?: string | ArrayLike<number>, bytes?: string | ArrayLike<number>, msg?: string): void;
     }
   }
 }
 
 declare function chaiBytes(chai: any): any;
-export = chaiBytes;
+export default chaiBytes;
