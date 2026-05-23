@@ -21,7 +21,7 @@ function every (buffer, predicate) {
 export default function (chai) {
   const Assertion = chai.Assertion;
 
-  Assertion.addMethod('equalBytes', function (expected) {
+  Assertion.addMethod('equalBytes', function (expected, message) {
     if (typeof expected === 'string') {
       if (expected.length % 2 !== 0 || !/^[0-9a-f]*$/i.test(expected)) {
         throw new TypeError('Invalid hex string: ' + expected);
@@ -48,8 +48,8 @@ export default function (chai) {
 
     this.assert(
       assert,
-      'expected #{this} to equal #{exp}',
-      'expected #{this} to not equal #{exp}',
+      message ?? 'expected #{this} to equal #{exp}',
+      message ?? 'expected #{this} to not equal #{exp}',
       expected
     );
   });

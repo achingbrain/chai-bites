@@ -5,7 +5,7 @@ const { expect, assert } = chai.use(chaiBytes);
 const buffer = Uint8Array.from([1, 2, 3]);
 
 // Check `expect` behavior.
-expect(buffer).to.equalBytes([1, 2, 3]);
+expect(buffer).to.equalBytes([1, 2, 3], 'what went wrong');
 expect(buffer).to.equalBytes('010203');
 expect(buffer).to.equalBytes(Uint8Array.from([1, 2, 3]));
 // Check chaining
