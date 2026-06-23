@@ -36,7 +36,7 @@
   "author": "Alex Ostrovski <ostrovski.alex@gmail.com>",
   "license": "Apache-2.0",
   "devDependencies": {
-    "@babel/core": "^7.15.0",
+    "@babel/core": "^8.0.1",
     "@types/chai": "^4.2.21",
     "babel-plugin-istanbul": "^6.0.0",
     "babelify": "^10.0.0",
